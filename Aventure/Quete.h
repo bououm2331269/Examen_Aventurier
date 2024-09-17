@@ -26,6 +26,6 @@ public:
 	int getRecompense();
 	int getExp();
 
-	virtual string to_string();
+	 string to_string();
 };
 
