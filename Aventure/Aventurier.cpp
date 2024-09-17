@@ -3,7 +3,7 @@
 using namespace std;
 Aventurier::Aventurier()
 {
-	niveau = 100;
+	niveau = 90;
 }
 
 Aventurier::~Aventurier()

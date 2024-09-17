@@ -50,6 +50,19 @@ string Quete::to_string()
 	info.append("NiveauMin: " + std::to_string(this->getNivMin()) + "\n");
 	info.append("Recompense en Or : " + std::to_string(this->getRecompense()) + "\n");
 	info.append("Experience recue : " + std::to_string(this->getExp()) + "\n");
-	//info.append("Niveau de difficulté : " + std::to_string(this->getDifficulte()) + "\n");
+	if (nivDifficulte == NiveauDifficulte::FACILE) 
+	{
+		info.append("Niveau de difficulte facile \n");
+	}
+	else if (nivDifficulte == NiveauDifficulte::MOYEN) 
+	{
+		info.append("Niveau de difficulte moyen \n");
+	}
+	else 
+	{
+		info.append("Niveau de difficulte difficile \n");
+	}
+	
+	
 	return info;
 }
